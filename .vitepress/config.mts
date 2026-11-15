@@ -28,10 +28,11 @@ export default defineConfig({
     root: {
       label: 'English',
       lang: 'en',
-      description: 'Hardened Android based on GrapheneOS',
+      description: 'Android without Google: Material You apps, a flexible launcher and on-device AI, based on GrapheneOS',
       themeConfig: {
         nav: [
           { text: 'Docs', link: '/docs/vs-grapheneos' },
+          { text: 'Apps', link: '/apps/phone', activeMatch: '/apps/' },
           { text: 'Install', link: '/install/web' },
           { text: 'Devlog', link: '/devlog/' },
           { text: 'Decisions', link: '/decisions/' },
@@ -45,6 +46,23 @@ export default defineConfig({
               { text: 'Differences from GrapheneOS', link: '/docs/vs-grapheneos' },
               { text: 'Threat model', link: '/docs/threat-model' },
               { text: 'FAQ', link: '/docs/faq' }
+            ]
+          },
+          {
+            text: 'Apps',
+            items: [
+              { text: 'Phone', link: '/apps/phone' },
+              { text: 'Messages', link: '/apps/messages' },
+              { text: 'Gallery', link: '/apps/gallery' },
+              { text: 'Calendar', link: '/apps/calendar' },
+              { text: 'Clock', link: '/apps/clock' },
+              { text: 'Calculator', link: '/apps/calculator' },
+              { text: 'Music', link: '/apps/music' },
+              { text: 'Weather', link: '/apps/weather' },
+              { text: 'Recorder', link: '/apps/recorder' },
+              { text: 'Keyboard', link: '/apps/keyboard' },
+              { text: 'Notepad', link: '/apps/notepad' },
+              { text: 'Launcher', link: '/apps/launcher' }
             ]
           },
           {
@@ -78,10 +96,11 @@ export default defineConfig({
       label: 'Русский',
       lang: 'ru',
       link: '/ru/',
-      description: 'Защищённый Android на основе GrapheneOS',
+      description: 'Android без Google: приложения Material You, гибкий лаунчер и локальный ИИ, на базе GrapheneOS',
       themeConfig: {
         nav: [
           { text: 'Документация', link: '/ru/docs/vs-grapheneos' },
+          { text: 'Приложения', link: '/ru/apps/phone', activeMatch: '/ru/apps/' },
           { text: 'Установка', link: '/ru/install/web' },
           { text: 'Поддержать', link: '/ru/support' }
         ],
@@ -93,6 +112,23 @@ export default defineConfig({
               { text: 'Отличия от GrapheneOS', link: '/ru/docs/vs-grapheneos' },
               { text: 'Модель угроз', link: '/ru/docs/threat-model' },
               { text: 'FAQ', link: '/ru/docs/faq' }
+            ]
+          },
+          {
+            text: 'Приложения',
+            items: [
+              { text: 'Телефон', link: '/ru/apps/phone' },
+              { text: 'Сообщения', link: '/ru/apps/messages' },
+              { text: 'Галерея', link: '/ru/apps/gallery' },
+              { text: 'Календарь', link: '/ru/apps/calendar' },
+              { text: 'Часы', link: '/ru/apps/clock' },
+              { text: 'Калькулятор', link: '/ru/apps/calculator' },
+              { text: 'Музыка', link: '/ru/apps/music' },
+              { text: 'Погода', link: '/ru/apps/weather' },
+              { text: 'Диктофон', link: '/ru/apps/recorder' },
+              { text: 'Клавиатура', link: '/ru/apps/keyboard' },
+              { text: 'Блокнот', link: '/ru/apps/notepad' },
+              { text: 'Лаунчер', link: '/ru/apps/launcher' }
             ]
           },
           {
@@ -130,6 +166,8 @@ export default defineConfig({
       }
     }
   },
+
+  markdown: { image: { lazyLoading: true } },
 
   themeConfig: {
     logo: { light: '/favicon.svg', dark: '/logo.svg', alt: '' },
